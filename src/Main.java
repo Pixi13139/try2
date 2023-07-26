@@ -10,11 +10,21 @@ public class Main {
         }
         System.out.println();
 
-        int[] szamok = new int[]{1, 3, 6, 7, 10, 11};
+        int[] szamok = new int[]{1, 3, 6, 7, 10, 11, 18, 19};
         containsNegative(szamok);
         System.out.println();
         biggestNum(szamok);
         System.out.println();
+
+        int biggestNumOnEvenIndex = szamok[0];
+        for (int i = 0; i < szamok.length; i++) {
+            if (i % 2 == 0 && szamok[i] > biggestNumOnEvenIndex){
+                biggestNumOnEvenIndex = szamok[i];
+            }
+        }
+        System.out.println("A páros indexű elemek legnagyobb száma: " + biggestNumOnEvenIndex);
+
+
 
         int a = 3;
         int b = 2;

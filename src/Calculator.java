@@ -13,5 +13,11 @@ public class Calculator {
     public static void hatvanyoz (int a, int b){
         int result = (int)Math.pow(a, b);
         System.out.println("Az első szám a második számadik hatványon: " + result);
+
+
+
     }
+
+
+
 }
